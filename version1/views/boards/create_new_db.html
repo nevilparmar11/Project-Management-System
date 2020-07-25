@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="../../public/css/main.css" >
+</head>
+
+<body>
+<div align="center">
+    <main class="main">
+        <h1>Create New board</h1>
+        <a href="./dashboard.html" >Back</a><br><br>
+        <form class="form-input" action="/boards" method="post">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" name="name" required/>
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="key">Key</label>
+                <input type="text" class="form-control" id="key" name="key" required/>
+            </div>
+            <br>
+            &nbsp;&nbsp;<input class="btn btn-primary" type="submit" value="Create board" />
+            <br>
+        </form>
+    </main>
+    </div>
+</body>
+
+</html>

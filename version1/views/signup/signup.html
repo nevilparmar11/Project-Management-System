@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	</head>
+	<body id="session-page">
+		<div align="center">
+			<form class="form-signin" action="/signup" method="post">
+				<div class="text-center mb-4">
+					<h1 class="h3 mb-3 font-weight-normal form-header">
+						Sign up for your account
+					</h1>
+					<br>
+				<div class="form-label-group">
+					<input
+						class="form-control"
+						type="email"
+						id="email"
+						name="email"
+						placeholder="Enter email address"
+						required
+					/>
+				</div>
+				<br>
+				<div class="form-label-group">
+					<input
+						class="form-control"
+						type="text"
+						id="username"
+						name="username"
+						placeholder="Enter username"
+						required
+					/>
+				</div>
+				<br>
+				<div class="form-label-group">
+					<input
+						class="form-control"
+						type="text"
+						id="firstName"
+						name="firstName"
+						placeholder="Enter first name"
+						required
+					/>
+				</div>
+				<br>
+				<div class="form-label-group">
+					<input
+						class="form-control"
+						type="text"
+						id="lastName"
+						name="lastName"
+						placeholder="Enter last name"
+						required
+					/>
+				</div>
+				<br>
+				<div class="form-label-group">
+					<input
+						class="form-control"
+						type="password"
+						id="password"
+						name="password"
+						placeholder="Create password"
+						required
+					/>
+				</div>
+				<br>
+				<input
+					class="btn btn-lg btn-primary btn-block"
+					id="sign-up-btn"
+					type="submit"
+					value="Sign up"
+				/>
+				<br>
+				<br>
+				<a href="../login/login.html" id="sign-in-link">Already have an account? Sign in here.</a>
+			</form>
+		</div>
+	</body>
+</html>

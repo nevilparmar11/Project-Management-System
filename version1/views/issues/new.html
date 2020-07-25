@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>
+        Create New Issue/Task
+    </title>
+</head>
+
+<body>
+    <div class="main" align="center">
+        <h1>New Issue/Task</h1>
+        <a href="../boards/dashboard.html" id="back-link">Back</a><br><br><br>
+        <form action="../boards/dashboard.html" class="form-input">
+            <table>
+                <tr>
+                    <div class="form-group">
+                        <td>
+                            <label for="title">What needs to be done?</label>
+                        </td>
+                        <td>
+                            <input type="text" class="form-control" id="title" name="title" required />
+                        </td>
+                    </div>
+                </tr>
+
+
+                <tr>
+                    <td>
+                        <br>
+                    </td>
+                </tr>
+
+                <tr>
+                    <div class="form-group">
+                        <td>
+                            <label for="type">Issue type</label>
+                        </td>
+                        <td> <select name="type" class="form-control short" id="type">
+                            <option value="Story">
+                                Story
+                            </option>
+                            <option value="Task">
+                                Task
+                            </option>
+                            <option value="Bug">
+                                Bug
+                            </option>
+                            <option value="Epic">
+                                Epic
+                            </option>
+                            </select>
+                        </td>
+                    </div>
+                </tr>
+
+
+                <tr>
+                    <td>
+                        <br>
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <div class="form-group">
+                        <td>
+                            <label for="priority">Priority</label>
+                        </td>
+                        <td>
+                            <select name="priority" class="form-control short" id="priority">
+						<option value="Highest" >
+							Highest
+						</option>
+                        <option value="Highest" >
+							High
+						</option>
+                        <option value="Highest" >
+							Medium
+						</option>
+                        <option value="Highest" >
+							Low
+						</option>
+                        <option value="Highest" >
+							Lowest
+						</option>
+                    </select>
+                        </td>
+                    </div>
+                </tr>
+
+
+                <tr>
+                    <td>
+                        <br>
+                    </td>
+                </tr>
+
+                <tr>
+                    <div class="form-group">
+                        <td>
+                            <label for="storyPoints">Story points</label>
+                        </td>
+                        <td>
+
+                            <input type="number" class="form-control shorter" id="storyPoints" name="storyPoints" min="0" />
+                        </td>
+                    </div>
+                </tr>
+
+
+                <tr>
+                    <td>
+                        <br>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2">
+
+                        <input class="btn btn-primary" type="submit" value="Submit" />
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+
+</html>
