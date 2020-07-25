@@ -1,2 +1,4 @@
 version1/public/
 version1/views/errorpages/static
+.vscode/
+.cph/
