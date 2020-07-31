@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Project Settings</title>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="./main.css">
+    <!-- <script>
+        $(document).ready(function() {
+            $(".hamburger").click(function() {
+                $(".wrapper").toggleClass("collapse");
+            });
+        });
+    </script> -->
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="top_navbar">
+            <div class="hamburger">
+                <div class="one"></div>
+                <div class="two"></div>
+                <div class="three"></div>
+            </div>
+            <div class="top_menu">
+                <div class="logo">
+                    PMS
+                </div>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-search"></i></a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-bell"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../users/userdetails.htm">
+                            <i class="fa fa-user"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="sidebar">
+            <ul>
+                <li>
+                    <a href="../boards/dashboard.html"><i class="fa fa-align-justify" aria-hidden="true"></i>&nbsp;&nbsp;
+                        Backlog</a>
+                </li>
+
+                <li>
+                    <a href="../boards/dashboard.html"><i class="fa fa-desktop" aria-hidden="true"></i>
+                        &nbsp;&nbsp;
+                        Board</a>
+                </li>
+
+                <li>
+                    <a href="../reports/report.html"><i class="fa fa-bar-chart" aria-hidden="true"></i>
+                        &nbsp;
+                        &nbsp;
+                        Report</a>
+                </li>
+
+                <li>
+                    <a href="https://github.com/nevilparmar11/Project-Management-System" target="__blank"> <i class="fa fa-database" aria-hidden="true"></i> &nbsp; &nbsp; Repository
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../issues/new.html"> <i class="fa fa-files-o" aria-hidden="true"></i>&nbsp; New Task / Issue</a>
+                </li>
+
+                <li>
+
+                    <a href="../settings/settings.html"> <i class="fa fa-cogs" aria-hidden="true"></i> &nbsp;&nbsp; Settings</a>
+                </li>
+
+                <li>
+
+                    <a href="../users/userdetails.htm"> <i class="fa fa-user-circle" aria-hidden="true"></i>&nbsp;&nbsp; My Profile</a>
+                </li>
+
+                <li>
+
+                    <a href="../login/login.html">
+                        <i class="fa fa-sign-out" aria-hidden="true"></i> &nbsp;&nbsp; Logout
+                    </a>
+                </li>
+                <br>
+
+            </ul>
+        </div>
+
+        <div style="height: 110px;"></div>
+        <div class="container" align="center">
+            <div class="row">
+                <div class="col-md-4 col-md-offset-4">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <div class="text-center">
+                                <h3><i class="fa fa-cogs fa-4x"></i></h3>
+                                <h2 class="text-center">Project Settings</h2>
+                                <p>You can reset your project settings here.</p>
+                                <div class="panel-body">
+
+                                    <form id="register-form" role="form" autocomplete="off" class="form" action="../boards/dashboard.html">
+
+                                        <div class="form-group">
+                                            <div class="input-group">
+                                                <span class="input-group-addon"><i class="glyphicon glyphicon-text-background color-blue"></i></span>
+                                                <input id="name" name="name" placeholder="name" class="form-control" type="name">
+                                            </div>
+                                            <br>
+                                            <select name="category" class="form-control short" id="category">
+                                                <option value="business">
+                                                    Business
+                                                </option>
+                                                <option value="Marketing">
+                                                    Marketing
+                                                </option>
+                                                <option value="Software">
+                                                    Software
+                                                </option>
+                                        </select> <br><br>
+                                            <div class="input-group">
+                                                <span class="input-group-addon"><i class="glyphicon glyphicon-text-background color-blue"></i></span>
+                                                <input id="description" name="description" placeholder="description" class="form-control" type="description">
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <div class="form-group">
+                                            <input name="recover-submit" class="btn btn-lg btn-block flat-button" value="Save" type="submit">
+                                        </div>
+
+                                        <input type="hidden" class="hide" name="token" id="token" value="">
+                                    </form>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+</body>
+
+
+</html>

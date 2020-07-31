@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Task Details</title>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!-- <script>
+        $(document).ready(function() {
+            $(".hamburger").click(function() {
+                $(".wrapper").toggleClass("collapse");
+            });
+        });
+    </script> -->
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="top_navbar">
+            <div class="hamburger">
+                <div class="one"></div>
+                <div class="two"></div>
+                <div class="three"></div>
+            </div>
+            <div class="top_menu">
+                <div class="logo">
+                    PMS
+                </div>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-search"></i></a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-bell"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../users/userdetails.htm">
+                            <i class="fa fa-user"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="sidebar">
+            <ul>
+                <li>
+                    <a href="../boards/dashboard.html"><i class="fa fa-align-justify" aria-hidden="true"></i>&nbsp;&nbsp;
+                        Backlog</a>
+                </li>
+
+                <li>
+                    <a href="../boards/dashboard.html"><i class="fa fa-desktop" aria-hidden="true"></i>
+                        &nbsp;&nbsp;
+                        Board</a>
+                </li>
+
+                <li>
+                    <a href="../reports/report.html"><i class="fa fa-bar-chart" aria-hidden="true"></i>
+                        &nbsp;
+                        &nbsp;
+                        Report</a>
+                </li>
+
+                <li>
+                    <a href="https://github.com/nevilparmar11/Project-Management-System" target="__blank"> <i class="fa fa-database" aria-hidden="true"></i> &nbsp; &nbsp; Repository
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../issues/new.html"> <i class="fa fa-files-o" aria-hidden="true"></i>&nbsp; New Task / Issue</a>
+                </li>
+
+                <li>
+
+                    <a href="../settings/settings.html"> <i class="fa fa-cogs" aria-hidden="true"></i> &nbsp;&nbsp; Settings</a>
+                </li>
+
+                <li>
+
+                    <a href="../users/userdetails.htm"> <i class="fa fa-user-circle" aria-hidden="true"></i>&nbsp;&nbsp; My Profile</a>
+                </li>
+
+                <li>
+
+                    <a href="../login/login.html">
+                        <i class="fa fa-sign-out" aria-hidden="true"></i> &nbsp;&nbsp; Logout
+                    </a>
+                </li>
+                <br>
+
+            </ul>
+        </div>
+
+        <div style="height: 120px;"></div>
+
+        <div class="main" align="center">
+            <h1>Task Details</h1>
+            <a href="../boards/dashboard.html" onclick="history.go(-1)">Back</a>
+            <br><br><br>
+
+            <table>
+                <form class="form-input" action="./edit.html">
+
+                    <tr>
+                        <div class="form-group">
+                            <td>
+                                <label for="title">What needs to be done? &nbsp;&nbsp;</label>
+                            </td>
+                            <td>
+                                Description of the task
+                            </td>
+                        </div>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <br>
+                        </td>
+                    </tr>
+
+                    <tr>
+
+                        <div class="form-group">
+                            <td>
+                                <label for="type">Issue type</label>
+                            </td>
+                            <td>
+                                Story
+                            </td>
+                        </div>
+                    </tr>
+
+
+                    <tr>
+                        <td>
+                            <br>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <div class="form-group">
+                            <td>
+                                <label for="priority">Priority</label>
+                            </td>
+                            <td>
+                                Highest
+                            </td>
+                        </div>
+                    </tr>
+
+
+                    <tr>
+                        <td>
+                            <br>
+                        </td>
+                    </tr>
+
+
+                    <tr>
+                        <div class="form-group">
+                            <td>
+                                <label for="storyPoints">Story points</label>
+                            </td>
+                            <td>
+                                10
+                            </td>
+                        </div>
+                    </tr>
+
+
+                    <tr>
+                        <td>
+                            <br>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <div class="form-group">
+                            <td>
+                                <label for="sprint">Sprint</label>
+                            </td>
+                            <td>
+                                Group A
+                            </td>
+                        </div>
+                    </tr>
+
+
+                    <tr>
+                        <td>
+                            <br>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2">
+                            <input class="btn flat-button" type="submit" value="Edit">
+                        </td>
+                    </tr>
+                </form>
+            </table>
+        </div>
+</body>
+
+</html>

@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="./css/main.css">
+    <!-- <script>
+        $(document).ready(function() {
+            $(".hamburger").click(function() {
+                $(".wrapper").toggleClass("collapse");
+            });
+        });
+    </script> -->
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="top_navbar">
+            <div class="hamburger">
+                <div class="one"></div>
+                <div class="two"></div>
+                <div class="three"></div>
+            </div>
+            <div class="top_menu">
+                <div class="logo">
+                    PMS
+                </div>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-search"></i></a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-bell"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../users/userdetails.htm">
+                            <i class="fa fa-user"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="sidebar">
+            <ul>
+                <li>
+                    <a href="#"><i class="fa fa-align-justify" aria-hidden="true"></i>&nbsp;&nbsp;
+                        Backlog</a>
+                </li>
+
+                <li>
+                    <a href="#"><i class="fa fa-desktop" aria-hidden="true"></i>
+                        &nbsp;&nbsp;
+                        Board</a>
+                </li>
+
+                <li>
+                    <a href="../reports/report.html"><i class="fa fa-bar-chart" aria-hidden="true"></i>
+                        &nbsp;
+                        &nbsp;
+                        Report</a>
+                </li>
+
+                <li>
+                    <a href="https://github.com/nevilparmar11/Project-Management-System" target="__blank"> <i class="fa fa-database" aria-hidden="true"></i> &nbsp; &nbsp; Repository
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../issues/new.html"> <i class="fa fa-files-o" aria-hidden="true"></i>&nbsp; New Task / Issue</a>
+                </li>
+
+                <li>
+
+                    <a href="../settings/settings.html"> <i class="fa fa-cogs" aria-hidden="true"></i> &nbsp;&nbsp; Settings</a>
+                </li>
+
+                <li>
+
+                    <a href="../users/userdetails.htm"> <i class="fa fa-user-circle" aria-hidden="true"></i>&nbsp;&nbsp; My Profile</a>
+                </li>
+
+                <li>
+
+                    <a href="../login/login.html">
+                        <i class="fa fa-sign-out" aria-hidden="true"></i> &nbsp;&nbsp; Logout
+                    </a>
+                </li>
+                <br>
+
+            </ul>
+        </div>
+
+        <div class="main_container">
+            <div class="card-containers">
+                <div class="levels">
+                    <span class="leveless">TO DO</span>
+
+                    <div class="todo-item">
+                        <section>
+                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                            <span style="background-color: orange;
+                                    box-sizing: content-box; border-radius: 7px;
+                                    align-content: center;"> Space traval
+                                    partner </span>
+                            <br>
+                            <br>
+                            <i class="fa fa-bookmark-o" aria-hidden="true" style="color: orangered;"></i>
+                            <i class="fa fa-arrows-alt" aria-hidden="true" style="color: brown;"></i>
+                            <i class="fa fa-sort-numeric-asc" aria-hidden="true" style="color:gray;"></i>
+                            <span style="background-color: white; float:
+                                    right;">TS-129</span>
+                            <i class="fa fa-user-o" aria-hidden="true" style="float: right;"></i>
+                        </section>
+
+                    </div>
+                    <div class="todo-item">
+                        <section>
+                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                            <span style="background-color: orange;
+                                    box-sizing: content-box; border-radius: 7px;
+                                    align-content: center;"> Space traval
+                                    partner </span>
+                            <br>
+                            <br>
+                            <i class="fa fa-bookmark-o" aria-hidden="true" style="color: orangered;"></i>
+                            <i class="fa fa-arrows-alt" aria-hidden="true" style="color: brown;"></i>
+                            <i class="fa fa-sort-numeric-asc" aria-hidden="true" style="color:gray;"></i>
+                            <span style="background-color: white; float:
+                                    right;">TS-113</span>
+                            <i class="fa fa-user-o" aria-hidden="true" style="float: right;"></i>
+                        </section>
+
+                    </div>
+                    <div class="todo-item">
+                        <section>
+                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                            <span style="background-color: orange;
+                                    box-sizing: content-box; border-radius: 7px;
+                                    align-content: center;"> Space traval
+                                    partner </span>
+                            <br>
+                            <br>
+                            <i class="fa fa-bookmark-o" aria-hidden="true" style="color: orangered;"></i>
+                            <i class="fa fa-arrows-alt" aria-hidden="true" style="color: brown;"></i>
+                            <i class="fa fa-sort-numeric-asc" aria-hidden="true" style="color:gray;"></i>
+                            <span style="background-color: white; float:
+                                    right;">TS-133</span>
+                            <i class="fa fa-user-o" aria-hidden="true" style="float: right;"></i>
+
+                        </section>
+
+                    </div>
+
+
+
+                </div>
+
+                <div class="levels">
+                    <span class="leveless">In-Progress</span>
+
+                    <div class="Inprogress-item">
+                        <section>
+                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                            <span style="background-color: rgb(0, 153, 255);
+                                    box-sizing: content-box; border-radius: 7px;
+                                    align-content: center;"> Space traval
+                                    partner </span>
+                            <br>
+                            <br>
+                            <i class="fa fa-check-square-o" aria-hidden="true" style="color: orange;"></i>
+                            <i class="fa fa-snowflake-o" aria-hidden="true" style="color: green;"></i>
+                            <i class="fa fa-sort-numeric-asc" aria-hidden="true" style="color:gray;"></i>
+                            <span style="background-color: white; float:
+                                    right;">TS-134</span>
+                            <i class="fa fa-user-o" aria-hidden="true" style="float: right;"></i>
+
+                        </section>
+
+                    </div>
+
+
+                    <div class="Inprogress-item">
+                        <section>
+                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                            <span style="background-color: rgb(0, 153, 255);
+                                    box-sizing: content-box; border-radius: 7px;
+                                    align-content: center;"> Space traval
+                                    partner </span>
+                            <br>
+                            <br>
+                            <i class="fa fa-check-square-o" aria-hidden="true" style="color: orange;"></i>
+                            <i class="fa fa-snowflake-o" aria-hidden="true" style="color: green;"></i>
+                            <i class="fa fa-sort-numeric-asc" aria-hidden="true" style="color:gray;"></i>
+                            <span style="background-color: white; float:
+                                    right;">TS-131</span>
+                            <i class="fa fa-user-o" aria-hidden="true" style="float: right;"></i>
+
+                        </section>
+
+                    </div>
+
+
+                    <div class="Inprogress-item">
+                        <section>
+                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                            <span style="background-color: rgb(0, 153, 255);
+                                    box-sizing: content-box; border-radius: 7px;
+                                    align-content: center;"> Space traval
+                                    partner </span>
+                            <br>
+                            <br>
+                            <i class="fa fa-check-square-o" aria-hidden="true" style="color: orange;"></i>
+                            <i class="fa fa-snowflake-o" aria-hidden="true" style="color: green;"></i>
+                            <i class="fa fa-sort-numeric-asc" aria-hidden="true" style="color:gray;"></i>
+                            <span style="background-color: white; float:
+                                    right;">TS-140</span>
+                            <i class="fa fa-user-o" aria-hidden="true" style="float: right;"></i>
+
+                        </section>
+
+                    </div>
+
+
+                    <div class="Inprogress-item">
+                        <section>
+                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                            <span style="background-color: rgb(0, 153, 255);
+                                    box-sizing: content-box; border-radius: 7px;
+                                    align-content: center;"> Space traval
+                                    partner </span>
+                            <br>
+                            <br>
+                            <i class="fa fa-check-square-o" aria-hidden="true" style="color: orange;"></i>
+                            <i class="fa fa-snowflake-o" aria-hidden="true" style="color: green;"></i>
+                            <i class="fa fa-sort-numeric-asc" aria-hidden="true" style="color:gray;"></i>
+                            <span style="background-color: white; float:
+                                    right;">TS-130</span>
+                            <i class="fa fa-user-o" aria-hidden="true" style="float: right;"></i>
+
+                        </section>
+
+                    </div>
+
+
+
+                </div>
+
+                <div class="levels">
+                    <span class="leveless">Code Review</span>
+                    <div class="codereview-item">
+                        <section>
+                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                            <span style="background-color: rgb(158, 104,
+                                    211); box-sizing: content-box;
+                                    border-radius: 7px; align-content: center;">
+                                    Space traval partner </span>
+                            <br>
+                            <br>
+                            <i class="fa fa-list-alt" aria-hidden="true"></i>
+                            <i class="fa fa-snowflake-o" aria-hidden="true" style="color: green;"></i>
+                            <i class="fa fa-sort-numeric-asc" aria-hidden="true" style="color:gray;"></i>
+                            <span style="background-color: white; float:
+                                    right;">TS-130</span>
+                            <i class="fa fa-user-o" aria-hidden="true" style="float: right;"></i>
+                        </section>
+
+                    </div>
+
+                    <div class="codereview-item">
+                        <section>
+                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                            <span style="background-color: rgb(158, 104,
+                                    211); box-sizing: content-box;
+                                    border-radius: 7px; align-content: center;">
+                                    Space traval partner </span>
+                            <br>
+                            <br>
+                            <i class="fa fa-list-alt" aria-hidden="true"></i>
+                            <i class="fa fa-snowflake-o" aria-hidden="true" style="color: green;"></i>
+                            <i class="fa fa-sort-numeric-asc" aria-hidden="true" style="color:gray;"></i>
+                            <span style="background-color: white; float:
+                                    right;">TS-130</span>
+                            <i class="fa fa-user-o" aria-hidden="true" style="float: right;"></i>
+
+                        </section>
+
+                    </div>
+
+                    <div class="codereview-item">
+                        <section>
+                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                            <span style="background-color: rgb(158, 104,
+                                    211); box-sizing: content-box;
+                                    border-radius: 7px; align-content: center;">
+                                    Space traval partner </span>
+                            <br>
+                            <br>
+                            <i class="fa fa-list-alt" aria-hidden="true"></i>
+                            <i class="fa fa-snowflake-o" aria-hidden="true" style="color: green;"></i>
+                            <i class="fa fa-sort-numeric-asc" aria-hidden="true" style="color:gray;"></i>
+                            <span style="background-color: white; float:
+                                    right;">TS-130</span>
+                            <i class="fa fa-user-o" aria-hidden="true" style="float: right;"></i>
+                        </section>
+
+                    </div>
+
+
+                </div>
+
+                <div class="levels">
+                    <span class="leveless">In-Testing</span>
+                    <div class="intesting-item">
+                        <section>
+                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                            <span style="background-color: yellow;
+                                    box-sizing: content-box; border-radius: 7px;
+                                    align-content: center;"> Space traval
+                                    partner </span>
+                            <br>
+                            <br>
+                            <i class="fa fa-search-minus" aria-hidden="true" style="color:rgb(31, 28, 204);"></i>
+                            <i class="fa fa-snowflake-o" aria-hidden="true" style="color: green;"></i>
+                            <i class="fa fa-sort-numeric-asc" aria-hidden="true" style="color:gray;"></i>
+                            <span style="background-color: white; float:
+                                    right;">TS-130</span>
+                            <i class="fa fa-user-o" aria-hidden="true" style="float: right;"></i>
+
+                        </section>
+
+                    </div>
+
+                    <div class="intesting-item">
+                        <section>
+                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                            <span style="background-color: yellow;
+                                    box-sizing: content-box; border-radius: 7px;
+                                    align-content: center;"> Space traval
+                                    partner </span>
+                            <br>
+                            <br>
+                            <i class="fa fa-search-minus" aria-hidden="true" style="color:rgb(31, 28, 204);"></i>
+                            <i class="fa fa-snowflake-o" aria-hidden="true" style="color: green;"></i>
+                            <i class="fa fa-sort-numeric-asc" aria-hidden="true" style="color:gray;"></i>
+                            <span style="background-color: white; float:
+                                    right;">TS-130</span>
+                            <i class="fa fa-user-o" aria-hidden="true" style="float: right;"></i>
+
+                        </section>
+
+                    </div>
+
+                </div>
+
+                <div class="levels">
+                    <span class="leveless">Done</span>
+                    <div class="done-item">
+                        <section>
+                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                            <span style="background-color: yellowgreen;
+                                    box-sizing: content-box; border-radius: 7px;
+                                    align-content: center;"> Space traval
+                                    partner </span>
+                            <br>
+                            <br>
+                            <i class="fa fa-check-circle" aria-hidden="true" style="color: darkgreen;"></i>
+                            <i class="fa fa-snowflake-o" aria-hidden="true" style="color: green;"></i>
+                            <i class="fa fa-sort-numeric-asc" aria-hidden="true" style="color:gray;"></i>
+                            <span style="background-color: white; float:
+                                    right;">TS-130</span>
+                            <i class="fa fa-user-o" aria-hidden="true" style="float: right;"></i>
+
+
+                        </section>
+
+                    </div>
+                    <div class="done-item">
+                        <section>
+                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                            <span style="background-color: yellowgreen;
+                                    box-sizing: content-box; border-radius: 7px;
+                                    align-content: center;"> Space traval
+                                    partner </span>
+                            <br>
+                            <br>
+                            <i class="fa fa-check-circle" aria-hidden="true" style="color: darkgreen;"></i>
+                            <i class="fa fa-snowflake-o" aria-hidden="true" style="color: green;"></i>
+                            <i class="fa fa-sort-numeric-asc" aria-hidden="true" style="color:gray;"></i>
+                            <span style="background-color: white; float:
+                                    right;">TS-130</span>
+                            <i class="fa fa-user-o" aria-hidden="true" style="float: right;"></i>
+
+                        </section>
+
+                    </div>
+                    <div class="done-item">
+                        <section>
+                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                            <span style="background-color: yellowgreen;
+                                    box-sizing: content-box; border-radius: 7px;
+                                    align-content: center;"> Space traval
+                                    partner </span>
+                            <br>
+                            <br>
+                            <i class="fa fa-check-circle" aria-hidden="true" style="color: darkgreen;"></i>
+                            <i class="fa fa-snowflake-o" aria-hidden="true" style="color: green;"></i>
+                            <i class="fa fa-sort-numeric-asc" aria-hidden="true" style="color:gray;"></i>
+                            <span style="background-color: white; float:
+                                    right;">TS-130</span>
+                            <i class="fa fa-user-o" aria-hidden="true" style="float: right;"></i>
+
+                        </section>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Edit Issue / Task</title>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!-- <script>
+        $(document).ready(function() {
+            $(".hamburger").click(function() {
+                $(".wrapper").toggleClass("collapse");
+            });
+        });
+    </script> -->
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="top_navbar">
+            <div class="hamburger">
+                <div class="one"></div>
+                <div class="two"></div>
+                <div class="three"></div>
+            </div>
+            <div class="top_menu">
+                <div class="logo">
+                    PMS
+                </div>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-search"></i></a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-bell"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../users/userdetails.htm">
+                            <i class="fa fa-user"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="sidebar">
+            <ul>
+                <li>
+                    <a href="../boards/dashboard.html"><i class="fa fa-align-justify" aria-hidden="true"></i>&nbsp;&nbsp;
+                        Backlog</a>
+                </li>
+
+                <li>
+                    <a href="../boards/dashboard.html"><i class="fa fa-desktop" aria-hidden="true"></i>
+                        &nbsp;&nbsp;
+                        Board</a>
+                </li>
+
+                <li>
+                    <a href="../reports/report.html"><i class="fa fa-bar-chart" aria-hidden="true"></i>
+                        &nbsp;
+                        &nbsp;
+                        Report</a>
+                </li>
+
+                <li>
+                    <a href="https://github.com/nevilparmar11/Project-Management-System" target="__blank"> <i class="fa fa-database" aria-hidden="true"></i> &nbsp; &nbsp; Repository
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../issues/new.html"> <i class="fa fa-files-o" aria-hidden="true"></i>&nbsp; New Task / Issue</a>
+                </li>
+
+                <li>
+
+                    <a href="../settings/settings.html"> <i class="fa fa-cogs" aria-hidden="true"></i> &nbsp;&nbsp; Settings</a>
+                </li>
+
+                <li>
+
+                    <a href="../users/userdetails.htm"> <i class="fa fa-user-circle" aria-hidden="true"></i>&nbsp;&nbsp; My Profile</a>
+                </li>
+
+                <li>
+
+                    <a href="../login/login.html">
+                        <i class="fa fa-sign-out" aria-hidden="true"></i> &nbsp;&nbsp; Logout
+                    </a>
+                </li>
+                <br>
+
+            </ul>
+        </div>
+
+        <div style="height: 120px;"></div>
+
+        <div class="main" align="center">
+            <h1>Edit Issue</h1>
+            <a href="../boards/dashboard.html" onclick="history.go(-1)">Back</a>
+            <br><br><br>
+
+            <table>
+                <form class="form-input" action="./show.html">
+
+                    <tr>
+                        <div class="form-group">
+                            <td>
+                                <label for="title">What needs to be done? &nbsp;&nbsp;</label>
+                            </td>
+                            <td>
+                                <input type="text" class="form-control" id="title" name="title" value="Select the title of the issue" required>
+                            </td>
+                        </div>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <br>
+                        </td>
+                    </tr>
+
+                    <tr>
+
+                        <div class="form-group">
+                            <td>
+                                <label for="type">Issue type</label>
+                            </td>
+                            <td>
+                                <select name="type" class="form-control short" id="type">
+								<option value="Story">
+									Story
+							</option>
+							<option value="Task">
+								Task
+							</option>
+							<option value="Bug">
+								Bug
+							</option>
+							<option value="Epic">
+								Epic
+							</option>
+						</select>
+                            </td>
+                        </div>
+                    </tr>
+
+
+                    <tr>
+                        <td>
+                            <br>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <div class="form-group">
+                            <td>
+                                <label for="priority">Priority</label>
+                            </td>
+                            <td>
+                                <select name="priority" class="form-control short" id="priority">
+								<option value="Highest" >
+									Highest
+							</option>
+							<option value="Highest" >
+								High
+							</option>
+							<option value="Highest" >
+								Medium
+							</option>
+							<option value="Highest" >
+								Low
+							</option>
+							<option value="Highest" >
+								Lowest
+							</option>
+						</select>
+                            </td>
+                        </div>
+                    </tr>
+
+
+                    <tr>
+                        <td>
+                            <br>
+                        </td>
+                    </tr>
+
+
+                    <tr>
+                        <div class="form-group">
+                            <td>
+                                <label for="storyPoints">Story points</label>
+                            </td>
+                            <td>
+                                <input type="number" class="form-control shorter" id="storyPoints" name="storyPoints" value="<%= issue.storyPoints %>">
+                            </td>
+                        </div>
+                    </tr>
+
+
+                    <tr>
+                        <td>
+                            <br>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <div class="form-group">
+                            <td>
+                                <label for="sprint">Sprint</label>
+                            </td>
+                            <td>
+                                <select name="sprint" class="form-control normal" id="sprint">
+								<option value="Group A" >
+									Group A
+								</option>
+								<option value="Group A" >
+									Group B
+								</option>
+								<option value="Group A" >
+									Group C
+								</option>
+							</select>
+                            </td>
+                        </div>
+                    </tr>
+
+
+                    <tr>
+                        <td>
+                            <br>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2">
+                            <input class="btn flat-button" type="submit" value="Save">
+                        </td>
+                    </tr>
+                </form>
+            </table>
+        </div>
+</body>
+
+</html>
