@@ -32,6 +32,11 @@ It is a tool to help in managing projects. It is more useful in current market s
 - It is developed using html semantic elements only.
 - CSS is added in the some components to structure the site well.
 
+# Version 2
+- [Version 2](https://project-management-system.netlify.app/version2) of the website is now live.
+- It is the refined version of website version 1.
+- It is developed using HTML and CSS only.
+
 # Live Demo
 [Visit Demo](https://project-management-system.netlify.app/)
 
