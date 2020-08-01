@@ -2,9 +2,6 @@
 
 $(function() {
 
-    // author badge :)
-    var author = '<div style="position: fixed;bottom: 0;right: 20px;background-color: #fff;box-shadow: 0 4px 8px rgba(0,0,0,.05);border-radius: 3px 3px 0 0;font-size: 12px;padding: 5px 10px;">By <a href="https://twitter.com/mhdnauvalazhar">@mhdnauvalazhar</a> &nbsp;&bull;&nbsp; <a href="https://www.buymeacoffee.com/mhdnauvalazhar">Buy me a Coffee</a></div>';
-    $("body").append(author);
 
     $("input[type='password'][data-eye]").each(function(i) {
         var $this = $(this),
