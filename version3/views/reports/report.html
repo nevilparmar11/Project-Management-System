@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Project Settings</title>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="./main.css">
+    <!-- <script>
+        $(document).ready(function() {
+            $(".hamburger").click(function() {
+                $(".wrapper").toggleClass("collapse");
+            });
+        });
+    </script> -->
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript">
+        window.onload = function() {
+            var chart = new CanvasJS.Chart("chartContainer", {
+                title: {
+                    text: "Progress of Project - A"
+                },
+                legend: {
+                    maxWidth: 350,
+                    itemWidth: 120
+                },
+                data: [{
+                    type: "pie",
+                    showInLegend: true,
+                    legendText: "{indexLabel}",
+                    dataPoints: [{
+                        y: 4181563,
+                        indexLabel: "Task 1"
+                    }, {
+                        y: 2175498,
+                        indexLabel: "Task 2"
+                    }, {
+                        y: 3125844,
+                        indexLabel: "Task 3"
+                    }, {
+                        y: 1176121,
+                        indexLabel: "Task 4"
+                    }, ]
+                }]
+            });
+            chart.render();
+        }
+    </script>
+    <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="top_navbar">
+            <div class="hamburger">
+                <div class="one"></div>
+                <div class="two"></div>
+                <div class="three"></div>
+            </div>
+            <div class="top_menu">
+                <div class="logo">
+                    PMS
+                </div>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-search"></i></a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-bell"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../users/userdetails.htm">
+                            <i class="fa fa-user"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="sidebar">
+            <ul>
+                <li>
+                    <a href="../boards/dashboard.html"><i class="fa fa-align-justify" aria-hidden="true"></i>&nbsp;&nbsp;
+                        Backlog</a>
+                </li>
+
+                <li>
+                    <a href="../boards/dashboard.html"><i class="fa fa-desktop" aria-hidden="true"></i>
+                        &nbsp;&nbsp;
+                        Board</a>
+                </li>
+
+                <li>
+                    <a href="../reports/report.html"><i class="fa fa-bar-chart" aria-hidden="true"></i>
+                        &nbsp;
+                        &nbsp;
+                        Report</a>
+                </li>
+
+                <li>
+                    <a href="https://github.com/nevilparmar11/Project-Management-System" target="__blank"> <i class="fa fa-database" aria-hidden="true"></i> &nbsp; &nbsp; Repository
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../issues/new.html"> <i class="fa fa-files-o" aria-hidden="true"></i>&nbsp; New Task / Issue</a>
+                </li>
+
+                <li>
+
+                    <a href="../settings/settings.html"> <i class="fa fa-cogs" aria-hidden="true"></i> &nbsp;&nbsp; Settings</a>
+                </li>
+
+                <li>
+
+                    <a href="../users/userdetails.htm"> <i class="fa fa-user-circle" aria-hidden="true"></i>&nbsp;&nbsp; My Profile</a>
+                </li>
+
+                <li>
+
+                    <a href="../login/login.html">
+                        <i class="fa fa-sign-out" aria-hidden="true"></i> &nbsp;&nbsp; Logout
+                    </a>
+                </li>
+                <br>
+
+            </ul>
+        </div>
+
+        <div style="height: 110px;"></div>
+        <div>
+            <center>
+                <h3>
+                    Reports coming soon.
+                </h3>
+                <br>
+                <p>
+                    Reports and analysis of the project tasks will be displayed here.
+                </p>
+                <p>
+                    Project manager can monitor the progress of various tasks on this page.
+                </p>
+
+                <p>
+                    He/She can download the progress of the project in the form of pdf.
+                </p>
+                <br><br>
+                <div id="chartContainer" style="height: 300px; width: 30%;"></div>
+            </center>
+        </div>
+</body>
+
+</html>
