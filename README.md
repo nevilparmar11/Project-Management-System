@@ -37,6 +37,11 @@ It is a tool to help in managing projects. It is more useful in current market s
 - It is the refined version of website version 1.
 - It is developed using HTML and CSS only.
 
+# Version 3
+- [Version 3](https://project-management-system.netlify.app/version3) of the website is now live.
+- It is the refined version of website version 1 & 2.
+- It is developed using HTML , CSS and JAVASCRIPT.
+
 # Live Demo
 [Visit Demo](https://project-management-system.netlify.app/)
 
