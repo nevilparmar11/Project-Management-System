@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Task Details</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./main.css">
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>Project Management System</h3>
+            </div>
+
+            <ul class="list-unstyled components">
+
+                <li class="active">
+                    <a href="../boards/dashboard.html"><i class="fas fa-home" aria-hidden="true"></i>&nbsp;&nbsp;Home</a>
+                </li>
+                <li>
+                    <a href="../issues/new.html"> <i class="fas fa-file" aria-hidden="true"></i>&nbsp; New Task / Issue</a>
+                </li>
+
+                <li>
+                    <a href="../boards/create_new_db.html"> <i class="fas fa-clipboard" aria-hidden="true"></i>&nbsp; New Board</a>
+                </li>
+
+                <li>
+                    <a href="../reports/report.html"><i class="fas fa-chart-pie" aria-hidden="true"></i>
+                        &nbsp;
+                        Report</a>
+                </li>
+
+                <li>
+                    <a href="https://github.com/nevilparmar11/Project-Management-System" target="__blank"> <i class="fa fa-database" aria-hidden="true"></i> &nbsp; &nbsp; Repository
+                    </a>
+                </li>
+
+
+
+                <li>
+
+                    <a href="../settings/settings.html"> <i class="fas fa-cogs" aria-hidden="true"></i> &nbsp;&nbsp; Settings</a>
+                </li>
+
+                <li>
+
+                    <a href="../users/userdetails.htm"> <i class="fas fa-user-circle" aria-hidden="true"></i>&nbsp;&nbsp; My Profile</a>
+                </li>
+
+                <li>
+
+                    <a href="../login/login.html">
+                        <i class="fas fa-sign-out-alt" aria-hidden="true"></i> &nbsp;&nbsp; Logout
+                    </a>
+                </li>
+            </ul>
+
+            <ul class="list-unstyled CTAs">
+                <li>
+                    <a href="https://github.com/nevilparmar11/Project-Management-System" class="download">Github Source Code</a>
+                </li>
+                <li>
+                    <a href="https://nevilparmar.me" class="article">About Me</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="btn btn-info btn-dark ">
+                        <i class="fas fa-align-left"></i>
+                        <span>Menu</span>
+                    </button>
+                </div>
+            </nav>
+
+            <div class="main" align="center">
+                <h1>Task Details</h1>
+                <a href="../boards/dashboard.html" onclick="history.go(-1)">Back</a>
+                <br><br><br>
+
+                <table>
+                    <form class="form-input" action="./edit.html">
+
+                        <tr>
+                            <div class="form-group">
+                                <td>
+                                    <label for="title">What needs to be done? &nbsp;&nbsp;</label>
+                                </td>
+                                <td>
+                                    Description of the task
+                                </td>
+                            </div>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <br>
+                            </td>
+                        </tr>
+
+                        <tr>
+
+                            <div class="form-group">
+                                <td>
+                                    <label for="type">Issue type</label>
+                                </td>
+                                <td>
+                                    Story
+                                </td>
+                            </div>
+                        </tr>
+
+
+                        <tr>
+                            <td>
+                                <br>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <div class="form-group">
+                                <td>
+                                    <label for="priority">Priority</label>
+                                </td>
+                                <td>
+                                    Highest
+                                </td>
+                            </div>
+                        </tr>
+
+
+                        <tr>
+                            <td>
+                                <br>
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <div class="form-group">
+                                <td>
+                                    <label for="storyPoints">Story points</label>
+                                </td>
+                                <td>
+                                    10
+                                </td>
+                            </div>
+                        </tr>
+
+
+                        <tr>
+                            <td>
+                                <br>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <div class="form-group">
+                                <td>
+                                    <label for="sprint">Sprint</label>
+                                </td>
+                                <td>
+                                    Group A
+                                </td>
+                            </div>
+                        </tr>
+                        <tr>
+                            <td>
+                                <br>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="2">
+                                <input class="btn btn-dark btn-lg flat-button" type="submit" value="Edit">
+                            </td>
+                        </tr>
+                    </form>
+                </table>
+            </div>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+            <script type="text/javascript">
+                $(document).ready(function() {
+                    $("#sidebar").mCustomScrollbar({
+                        theme: "minimal"
+                    });
+
+                    $('#sidebarCollapse').on('click', function() {
+                        $('#sidebar, #content').toggleClass('active');
+                        $('.collapse.in').toggleClass('in');
+                        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+                    });
+                });
+            </script>
+</body>
+
+</html>
