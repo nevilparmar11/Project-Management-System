@@ -48,6 +48,12 @@ It is a tool to help in managing projects. It is more useful in current market s
 - The site is fully responsive for any device.
 - It is developed using HTML , CSS, JAVASCRIPT and Bootstrap.
 
+# Version 5
+- [Version 5](https://project-management-system.netlify.app/version5) of the website is now live.
+- It is the refined version of website version 4.
+- The site is fully responsive for any device.
+- It is developed using HTML , CSS, JAVASCRIPT, Bootstrap and Jquery.
+
 # Live Demo
 [Visit Demo](https://project-management-system.netlify.app/)
 
