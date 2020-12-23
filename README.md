@@ -26,6 +26,10 @@ It is a tool to help in managing projects. It is more useful in current market s
 | Web Deployment Server | Netlify     |
 | Designing Tool | Adobe XD CC     |
 
+# Actual Project
+- This repository only contains the code of static realeases of the project.
+- The actual source code is in [this repository.](https://github.com/nevilparmar11/Project-Management-System-Server-Client-)
+
 # Version 1
 - [Version 1](https://project-management-system.netlify.app/version1) of the website is now live.
 - It is the skeleton of the site.
@@ -57,6 +61,17 @@ It is a tool to help in managing projects. It is more useful in current market s
 # Live Demo
 [Visit Demo](https://project-management-system.netlify.app/)
 
-## Note
-* The site is under development phase.
-* Final look and feel of the website will be improved in the upcoming phase of the development.
+---------
+
+```javascript
+
+if (youEnjoyed) {
+    starThisRepository();
+}
+
+```
+
+-----------
+
+## Thank You
+- Author : [Nevil Parmar](https://nevilparmar.me)
