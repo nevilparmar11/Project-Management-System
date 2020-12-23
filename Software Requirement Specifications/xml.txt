@@ -1,0 +1,64 @@
+<?xml version="1.0" ?>
+<users>
+<user id="u1">
+<name>Nevil Parmar</name>
+<email>Nevil Parmar</email>
+<createdAt>Nevil Parmar</createdAt>
+<updatedAt>Nevil Parmar</updatedAt>
+<password>@1234</password>
+<avatarUrl></avatarUrl>
+</user>
+</users>
+
+
+
+<?xml encoding="UTF-8"?>
+
+<!ELEMENT users (user *)>
+
+<!ELEMENT user (name,email,createdAt,updatedAt,password,avatarUrl)>
+
+<!ELEMENT name (#PCDATA)>
+
+<!ELEMENT email (#PCDATA)>
+
+<!ELEMENT createdAt (#PCDATA)>
+
+<!ELEMENT updatedAt (#PCDATA)>
+
+<!ELEMENT password (#PCDATA)>
+
+<!ELEMENT avatarUrl (#PCDATA)>
+<!ATTLIST user id ID #REQUIRED>
+
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="users">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="user"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="user">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="name"/>
+        <xs:element ref="email"/>
+        <xs:element ref="createdAt"/>
+        <xs:element ref="updatedAt"/>
+        <xs:element ref="password"/>
+        <xs:element ref="avatarUrl"/>
+      </xs:sequence>
+      <xs:attribute name="id" use="required" type="xs:NCName"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="name" type="xs:string"/>
+  <xs:element name="email" type="xs:string"/>
+  <xs:element name="createdAt" type="xs:string"/>
+  <xs:element name="updatedAt" type="xs:string"/>
+  <xs:element name="password" type="xs:string"/>
+  <xs:element name="avatarUrl">
+    <xs:complexType/>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,13 @@
+Home
+Login
+signup
+create diff users with varied roles and scopes
+Invite team members
+Task Page
+	- create new task
+	- existing task details page
+settings
+Meeting Room
+Analysis and Reports
+
+
