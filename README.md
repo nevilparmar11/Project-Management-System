@@ -17,7 +17,7 @@ It is a tool to help in managing projects. It is more useful in current market s
 - Maintain start date and end date of each task
 - Maintain the overall timeline of the project.
 
-# Technologies to be used
+# Technologies used
 | Tech Name        | Service Name           |
 | -------------    |:-------------:|
 | Application Architecture      | Microservices |
